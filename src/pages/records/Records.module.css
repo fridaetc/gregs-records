@@ -1,0 +1,7 @@
+.recordList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: space-around;
+  row-gap: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+}

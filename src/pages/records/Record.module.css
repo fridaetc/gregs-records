@@ -1,0 +1,96 @@
+.record {
+  padding: var(--spacing);
+  width: 300px;
+  box-sizing: border-box;
+  word-break: break-word;
+  position: relative;
+  text-align: left;
+
+  border: 2px solid;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.record {
+  background: white;
+  color: var(--main);
+  border-radius: 3px;
+  box-shadow: 4px 4px rgb(0 0 0 / 10%);
+}
+.title {
+  margin: 0;
+}
+.info {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing) 0;
+}
+.infoTitle {
+  padding: 3px 5px 3px 0;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.infoText {
+  width: 100%;
+}
+.record input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1em;
+  border: 0;
+  border-bottom: 2px solid var(--mainLight);
+  color: var(--main);
+
+  padding: 2px 0;
+  margin: 2px 0;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out;
+}
+.record input:focus,
+.record input:hover {
+  outline: 0;
+  border-color: 2px solid var(--mainDark);
+}
+.titleInput {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.actions {
+  flex: 0;
+}
+.actionBtn {
+  cursor: pointer;
+  float: right;
+  -webkit-transition: color 300ms ease-out;
+  -moz-transition: color 300ms ease-out;
+  -o-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
+}
+.actionBtn {
+  background: none;
+  border: 0;
+  color: var(--main);
+  font-size: 1em;
+}
+.actionBtn:hover,
+.actionBtn:focus {
+  outline: 0;
+  color: var(--mainDark);
+}
+.actionBtn:focus {
+  border-bottom: 1px solid var(--mainDark);
+}
+.cancel {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  background: white;
+  border-radius: 100%;
+  padding: 3px;
+  box-shadow: 4px 4px 0px rgb(0 0 0 / 10%);
+}

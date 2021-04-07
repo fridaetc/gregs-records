@@ -1,0 +1,11 @@
+.app {
+  padding: calc(var(--spacing) * 2);
+  text-align: center;
+}
+.title {
+  margin: 0;
+}
+.subTitle {
+  margin-top: 0;
+  margin-bottom: calc(var(--spacing) * 2);
+}

@@ -1,0 +1,20 @@
+.notification {
+  position: fixed;
+  background: white;
+  bottom: calc(var(--spacing) * 2);
+  padding: var(--spacing) calc(var(--spacing) * 2);
+  border-radius: 3px;
+  right: calc(var(--spacing) * 2);
+  display: flex;
+  align-items: center;
+}
+.notification.error {
+  background: #ca4c4c;
+}
+.notification.success {
+  background: #70b76b;
+}
+.reload {
+  margin-left: var(--spacing);
+  cursor: pointer;
+}

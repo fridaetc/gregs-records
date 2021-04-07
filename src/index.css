@@ -1,13 +1,38 @@
+:root {
+  --main: #825966;
+  --mainLight: #b98e9c;
+  --mainDark: #5d414a;
+  --spacing: 16px;
+}
+
 body {
+  background: var(--main);
+  color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: inherit;
+}
+
+::-moz-selection {
+  background: var(--mainDark);
+  color: white;
+}
+::selection {
+  background: var(--mainDark);
+  color: white;
 }
